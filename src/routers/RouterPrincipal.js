@@ -10,25 +10,14 @@ import Texto from '../components/basics/texto/Texto';
 import Selector_tema from '../components/basics/selector_tema/Selector_tema';
 import Selector_idioma from '../components/basics/selector_idioma/Selector_idioma';
 import Separador from '../components/basics/separador/Separador';
+import Tecnologia from '../components/basics/tecnologia/Tecnologia';
 
 
 
-function RouterPrincipal() {
+function RouterPrincipal({idioma, setIdioma}) {
 
     const [tema, setTema] = useState("claro");
-    const [idioma, setIdioma] = useState("");
     const { t } = useTranslation();
-
-    useEffect(() => {
-        if(localStorage.getItem("i18nextLng")){
-            setIdioma(localStorage.getItem("i18nextLng"));
-            i18n.changeLanguage(localStorage.getItem("i18nextLng"));
-        }else{
-            setIdioma("es");
-            localStorage.setItem("i18nextLng", "es");
-            i18n.changeLanguage("es");
-        }
-    }, [idioma]);
 
     useEffect(() => {
         if(localStorage.getItem("tema")){
@@ -37,14 +26,13 @@ function RouterPrincipal() {
             setTema("claro");
             localStorage.setItem("tema", "claro");
         }
-    }, [tema]);
-
+    }, []);
 
     return (
         <BrowserRouter>
 
             {/* MENU */}
-<Texto tema={tema} texto={t("home")} />
+<Tecnologia tema={tema} texto={t("home")} img="javascript" />
 <Separador tema={tema}/>
             <section className={tema === "oscuro" ? "contenido oscuro" : "contenido"}>
                 <Routes>
