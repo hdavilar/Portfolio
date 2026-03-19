@@ -6,8 +6,10 @@ import "../i18n";
 
 //Componentes
 import Titulo from '../components/basics/titulo/Titulo'; 
+import Texto from '../components/basics/texto/Texto';
 import Selector_tema from '../components/basics/selector_tema/Selector_tema';
 import Selector_idioma from '../components/basics/selector_idioma/Selector_idioma';
+import Separador from '../components/basics/separador/Separador';
 
 
 
@@ -42,7 +44,8 @@ function RouterPrincipal() {
         <BrowserRouter>
 
             {/* MENU */}
-<Titulo tema={tema} titulo={t("home")} />
+<Texto tema={tema} texto={t("home")} />
+<Separador tema={tema}/>
             <section className={tema === "oscuro" ? "contenido oscuro" : "contenido"}>
                 <Routes>
                     <Route path="/" element={<Selector_idioma idioma={idioma} setIdioma={setIdioma}/>} />
