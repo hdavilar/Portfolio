@@ -1,0 +1,45 @@
+/*Boton idiomas*/
+.idiomas{
+    background-color: #1c3f60; /*Color de fondo*/
+    width: 56px; /*Ancho*/
+    height: 56px; /*Alto*/
+    border-radius: 50%; /*Borde redondeado*/
+    display: grid; /*Uso de grid*/
+    place-items: center; /*Colocación de los items*/
+    cursor: pointer; /*Cursor*/
+    box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1); /*Sombra*/
+    line-height: 1; /*Alto de línea*/
+    position: relative; /*Posición*/
+    left: 27%; /*Posición desde la izquierda*/
+}
+        /*Input dentro del botón de idioma*/
+.input{
+    display: none; /*No visible*/
+}
+        /*Icono dentro del botón de idioma*/
+.icono{
+    grid-column: 1 / 1; /*Columna del grid*/
+    grid-row: 1 / 1; /*Fila del grid*/
+    transition: transform 500ms; /*Transición*/
+}
+        /*Icono de la bandera española*/
+.icono--en{
+    /*transition-delay: 200ms; /*Delay de la transición*/
+    color: #afc1d0; /*Color*/
+}
+
+        /*Icono de la bandera inglesa*/
+.icono--es{
+    transform: scale(0); /*Transformación*/
+    color: #afc1d0; /*Color*/
+}
+
+        /*Icono de la bandera española si está checkeado el input*/
+#switch:checked + .icono--en{
+    transform: scale(0); /*Transformación*/
+}
+        /*Icono de la bandera inglesa si está checkeado el input*/
+#switch:checked ~ .icono--es{
+    /*transition-delay: 200ms; /*Delay de la transición*/
+    transform: scale(1); /*Transformación*/
+}
