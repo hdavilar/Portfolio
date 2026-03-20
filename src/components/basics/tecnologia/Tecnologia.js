@@ -15,9 +15,9 @@ function Tecnologia({ tema, texto, img }) {
   const Icono = ICONOS[(img || "").toLowerCase()];
 
   return (
-    <div className={tema === "oscuro" ? "contenedor_tec oscuro" : "contenedor_tec"}>
-      <Icono width="30px" height="30px" className={tema === "oscuro" ? "icon_tec oscuro" : "icon_tec"} />
-      <label className={tema === "oscuro" ? "tex_tec oscuro" : "tex_tec"}>{texto}</label>
+    <div className={tema === "oscuro" ? "contenedor-tec oscuro" : "contenedor-tec"}>
+      <Icono width="30px" height="30px" className={tema === "oscuro" ? "icon-tec oscuro" : "icon-tec"} />
+      <label className={tema === "oscuro" ? "tex-tec oscuro" : "tex-tec"}>{texto}</label>
     </div>
   )
 }

@@ -11,6 +11,8 @@ import Selector_tema from '../components/basics/selector_tema/Selector_tema';
 import Selector_idioma from '../components/basics/selector_idioma/Selector_idioma';
 import Separador from '../components/basics/separador/Separador';
 import Tecnologia from '../components/basics/tecnologia/Tecnologia';
+import Logo_red from '../components/basics/logo_red/Logo_red';
+import Opcion from '../components/basics/opcion_menu/Opcion';
 
 
 
@@ -34,10 +36,12 @@ function RouterPrincipal({idioma, setIdioma}) {
             {/* MENU */}
 <Tecnologia tema={tema} texto={t("home")} img="javascript" />
 <Separador tema={tema}/>
+<Logo_red tema={tema} img="linkedin" enlace="#" />
+<Opcion enlace="home" />
             <section className={tema === "oscuro" ? "contenido oscuro" : "contenido"}>
                 <Routes>
                     <Route path="/" element={<Selector_idioma idioma={idioma} setIdioma={setIdioma}/>} />
-                    <Route path="/inicio" element={<Selector_tema tema={tema} setTema={setTema}/>} />
+                    <Route path="/home" element={<Selector_tema tema={tema} setTema={setTema}/>} />
                     {/*<Route path="/anadir" element={<Anadir tema={tema} usuario_actual={info_usuario} />} >
                         <Route path='' element={<FormularioAnadir/>} />
                         <Route path=':id' element={<FormularioAnadir/>} />

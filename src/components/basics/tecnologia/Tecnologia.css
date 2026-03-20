@@ -1,4 +1,4 @@
-.contenedor_tec{
+.contenedor-tec{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -9,25 +9,25 @@
     border-radius: 30px;
 }
 
-.contenedor_tec.oscuro{
+.contenedor-tec.oscuro{
     background-color: #f3f6fa;
 }
 
-.tex_tec{
+.tex-tec{
     color: #fff;
     font-size: 20px;
     font-family: sans-serif;
     font-weight: 500;
 }
 
-.tex_tec.oscuro{
+.tex-tec.oscuro{
     color: #1c3f60;
 }
 
-.icon_tec{
+.icon-tec{
     color: #fff;
 }
 
-.icon_tec.oscuro{
+.icon-tec.oscuro{
     color: #1c3f60;
 }
