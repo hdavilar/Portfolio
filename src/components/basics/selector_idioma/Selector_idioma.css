@@ -1,8 +1,8 @@
 /*Boton idiomas*/
 .idiomas{
     background-color: #1c3f60; /*Color de fondo*/
-    width: 56px; /*Ancho*/
-    height: 56px; /*Alto*/
+    width: 70px; /*Ancho*/
+    height: 70px; /*Alto*/
     border-radius: 50%; /*Borde redondeado*/
     display: grid; /*Uso de grid*/
     place-items: center; /*Colocación de los items*/
@@ -42,4 +42,21 @@
 #switch:checked ~ .icono--es{
     /*transition-delay: 200ms; /*Delay de la transición*/
     transform: scale(1); /*Transformación*/
+}
+
+.icono--en svg, .icono--es svg{
+    width: 70px; /*Ancho*/
+    height: 70px; /*Alto*/
+}
+
+@media (min-width: 800px) {
+    .idiomas{
+        width: 60px; /*Ancho*/
+        height: 60px; /*Alto*/
+    }
+
+    .icono--en svg, .icono--es svg{
+        width: 60px; /*Ancho*/
+        height: 60px; /*Alto*/
+    }
 }

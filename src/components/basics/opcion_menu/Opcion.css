@@ -2,8 +2,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 140px;
-    height: 50px;
+    /*width: 140px;
+    height: 50px;*/
+    width: 100px;
+    height: 60px;
     background-color: transparent;
 }
 
@@ -11,8 +13,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 140px;
-    height: 50px;
+    /*width: 140px;
+    height: 50px;*/
+    width: 100px;
+    height: 60px;
     background-color: #afc1d0;
     border: none;
     border-radius: 50px;
@@ -32,8 +36,8 @@
 }
 
 .op-menu a .icon-op{
-    /*width: 20px;
-    height: 20px;*/
+    width: 40px;
+    height: 40px;
     color: #fff;
 }
 
@@ -46,7 +50,8 @@
 }
 
 .op-menu a label{
-    margin-left: 7px;
+    display: none;
+    /*margin-left: 7px;*/
 }
 
 .op-menu a.active label{
@@ -56,4 +61,26 @@
 .op-menu a:hover label{
     color: #1c3f60;
     cursor: pointer;
+}
+
+@media (min-width: 800px) {
+    .op-menu{
+        width: 140px;
+        height: 50px;
+    }
+
+    .op-menu a{
+        width: 140px;
+        height: 50px;
+    }
+
+    .op-menu a .icon-op{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .op-menu a label{
+        display: block;
+        margin-left: 7px;
+    }
 }
