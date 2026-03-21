@@ -13,6 +13,8 @@ import Separador from '../components/basics/separador/Separador';
 import Tecnologia from '../components/basics/tecnologia/Tecnologia';
 import Logo_red from '../components/basics/logo_red/Logo_red';
 import Opcion from '../components/basics/opcion_menu/Opcion';
+import Menu from '../components/intermedios/menu/Menu';
+import Home from '../components/paginas/Home/Home';
 
 
 
@@ -34,17 +36,21 @@ function RouterPrincipal({idioma, setIdioma}) {
         <BrowserRouter>
 
             {/* MENU */}
-<Tecnologia tema={tema} texto={t("home")} img="javascript" />
+            <Menu tema={tema} setTema={setTema} idioma={idioma} setIdioma={setIdioma}/>
+
+{/*<Tecnologia tema={tema} texto={t("home")} img="javascript" />
 <Separador tema={tema}/>
 <Logo_red tema={tema} img="linkedin" enlace="#" />
 <ul>
     <Opcion enlace="home" />
-</ul>
+</ul>*/}
 
             <section className={tema === "oscuro" ? "contenido oscuro" : "contenido"}>
                 <Routes>
-                    <Route path="/" element={<Selector_idioma idioma={idioma} setIdioma={setIdioma}/>} />
-                    <Route path="/home" element={<Selector_tema tema={tema} setTema={setTema}/>} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/resume" element={<Home />} />
+                    <Route path="/projects" element={<Home />} />
                     {/*<Route path="/anadir" element={<Anadir tema={tema} usuario_actual={info_usuario} />} >
                         <Route path='' element={<FormularioAnadir/>} />
                         <Route path=':id' element={<FormularioAnadir/>} />

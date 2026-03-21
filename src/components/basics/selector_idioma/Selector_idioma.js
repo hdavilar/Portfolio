@@ -11,21 +11,17 @@ function Selector_idioma({idioma, setIdioma}) {
         /**
          * Función que cambia el idioma de la web según se pulse sobre el checkbox.
          */
-        if(idioma === "es"){
-            setIdioma("en");
-            localStorage.setItem("i18nextLng", "en");
-            i18n.changeLanguage("en");
-        }else if(idioma === "en"){
-            setIdioma("es");
-            localStorage.setItem("i18nextLng", "es");
-            i18n.changeLanguage("es");
-        }   
+        const nuevoIdioma = idioma === "es" ? "en" : "es";
+
+        setIdioma(nuevoIdioma);
+        localStorage.setItem("i18nextLng", nuevoIdioma);
+        i18n.changeLanguage(nuevoIdioma);
     }
 
     return (
-        <label htmlFor="switch" className="idiomas">
+        <label htmlFor="switch-idioma" className="idiomas">
             {/*Al cambiar el valor del input se ejecuta "cambiarIdioma", y si el idioma es inglés se checkea*/}
-            <input type="checkbox" className="input" id="switch" onChange={cambiarIdioma} 
+            <input type="checkbox" className="input" id="switch-idioma" onChange={cambiarIdioma} 
                 checked={idioma === "en" ? false : true} />
             <div className="icono icono--en">
                 <svg xmlns="http://www.w3.org/2000/svg" 

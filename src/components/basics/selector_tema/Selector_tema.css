@@ -7,17 +7,16 @@
     display: grid; /*Uso de grid*/
     place-items: center; /*Colocación de los items*/
     cursor: pointer; /*Cursor*/
-    box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1); /*Sombra*/
+    /*box-shadow: 0 0 50px 20px rgba(0, 0, 0, 0.1); /*Sombra*/
     line-height: 1; /*Alto de línea*/
     position: relative; /*Posición*/
-    left: 27%; /*Posición desde la izquierda*/
 }
         /*Input dentro del botón de tema*/
-.input{
+.tema-claro .input{
     display: none; /*No visible*/
 }
         /*Icono dentro del botón de tema*/
-.icono{
+.tema-claro .icono{
     grid-column: 1 / 1; /*Columna del grid*/
     grid-row: 1 / 1; /*Fila del grid*/
     transition: transform 500ms; /*Transición*/
@@ -35,11 +34,11 @@
 }
 
         /*Icono de la luna si está checkeado el input*/
-#switch:checked + .icono--luna{
+#switch-tema:checked + .icono--luna{
     transform: rotate(360deg) scale(0); /*Transformación*/
 }
         /*Icono del sol si está checkeado el input*/
-#switch:checked ~ .icono--sol{
+#switch-tema:checked ~ .icono--sol{
     transition-delay: 200ms; /*Delay de la transición*/
     transform: scale(1) rotate(360deg); /*Transformación*/
 }

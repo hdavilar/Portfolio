@@ -7,17 +7,15 @@ function Selector_tema({ tema, setTema }) {
         /**
          * Función que cambia el tema de la web según se pulse sobre el checkbox.
          */
-        if(tema === "oscuro"){
-            setTema("claro");
-        }else if(tema === "claro"){
-            setTema("oscuro");
-        }   
+        const nuevoTema = tema === "oscuro" ? "claro" : "oscuro";
+        setTema(nuevoTema);
+        localStorage.setItem("tema", nuevoTema);
     }
 
     return (
-        <label htmlFor="switch" className="tema-claro">
+        <label htmlFor="switch-tema" className="tema-claro">
             {/*Al cambiar el valor del input se ejecuta "cambiarTema", y si el tema es oscuro se checkea*/}
-            <input type="checkbox" className="input" id="switch" onChange={cambiarTema} 
+            <input type="checkbox" className="input" id="switch-tema" onChange={cambiarTema} 
                 checked={tema === "oscuro" ? false : true} />
             <div className="icono icono--luna">
             <svg

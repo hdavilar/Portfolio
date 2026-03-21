@@ -1,12 +1,13 @@
 .op-menu{
     list-style: none;
-    margin: 0;
+    margin: 0 10px 0 0;
     padding: 0;
     /*width: 140px;
     height: 50px;*/
     width: 100px;
     height: 60px;
     background-color: transparent;
+    display: inline-flex;
 }
 
 .op-menu a{
@@ -64,14 +65,17 @@
 }
 
 @media (min-width: 800px) {
-    .op-menu{
-        width: 140px;
+    .op-menu, .op-menu a{
+        min-width: 140px;
         height: 50px;
     }
 
+    .op-menu{
+        margin-right: 33px;
+    }
+
     .op-menu a{
-        width: 140px;
-        height: 50px;
+        padding: 0 10px;
     }
 
     .op-menu a .icon-op{
