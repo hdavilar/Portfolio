@@ -1,0 +1,24 @@
+.c-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: #afc1d0;
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.c-info .text{
+    color: #365679;
+    font-weight: bolder;
+}
+
+.c-info .text:last-of-type{
+    text-align: right;
+}
+
+.c-info.oscuro{
+    background-color: #fff;
+}

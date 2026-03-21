@@ -47,7 +47,7 @@ function RouterPrincipal({idioma, setIdioma}) {
 
             <section className={tema === "oscuro" ? "contenido oscuro" : "contenido"}>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Home tema={tema} />} />
                     {/*<Route path="/home" element={<Home />} />*/}
                     <Route path="/resume" element={<Home />} />
                     <Route path="/projects" element={<Home />} />
