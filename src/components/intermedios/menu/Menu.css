@@ -1,5 +1,6 @@
 .menu {
-	position: fixed;
+	/*position: fixed;*/
+    position: sticky;
 	display: flex;
 	align-items: center;
 	z-index: 1000;

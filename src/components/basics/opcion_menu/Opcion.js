@@ -18,10 +18,11 @@ const ICONOS = {
 function Opcion({enlace}) {
     const Icono = ICONOS[(enlace || "").toLowerCase()];
     const { t } = useTranslation();
+    const ruta = enlace.toLowerCase();
 
     return (
         <li className="op-menu">
-            <NavLink to={enlace.toLowerCase()}>
+            <NavLink to={ruta === "home" ? "/" : ruta} className={({ isActive }) => isActive ? "op-menu-link active" : "op-menu-link"}>
                 <Icono width="30px" height="30px" className="icon-op" />
                 <label>{t(enlace)}</label>
             </NavLink>

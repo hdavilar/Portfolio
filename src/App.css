@@ -5,3 +5,11 @@
 .contenido.oscuro{
     background-color: #365679;
 }
+
+.menu{
+    grid-area: menu;
+}
+
+.contenido{
+    grid-area: contenido;
+}
