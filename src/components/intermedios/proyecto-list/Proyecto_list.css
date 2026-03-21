@@ -1,0 +1,33 @@
+.p-list{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    justify-content: center;
+    background-color: #365679;
+    width: 70%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.p-list .tit{
+    color: #afc1d0;
+    font-size: 29px;
+}
+
+.p-list .text{
+    color: #fff;
+    font-weight: bolder;
+}
+
+.p-list .icon-red{
+    color: #afc1d0;
+}
+
+.p-list a:has(.icon-red){
+    text-align: center;
+}
+
+.p-list.oscuro{
+    background-color: #fff;
+}
