@@ -21,8 +21,10 @@ function Opcion({enlace}) {
 
     return (
         <li className="op-menu">
-            <Icono width="30px" height="30px" className="icon-op" />
-            <NavLink to={enlace.toLowerCase()}>{t(enlace)}</NavLink>
+            <NavLink to={enlace.toLowerCase()}>
+                <Icono width="30px" height="30px" className="icon-op" />
+                <label>{t(enlace)}</label>
+            </NavLink>
         </li>
     )
 }

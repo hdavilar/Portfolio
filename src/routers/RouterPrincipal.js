@@ -37,7 +37,10 @@ function RouterPrincipal({idioma, setIdioma}) {
 <Tecnologia tema={tema} texto={t("home")} img="javascript" />
 <Separador tema={tema}/>
 <Logo_red tema={tema} img="linkedin" enlace="#" />
-<Opcion enlace="home" />
+<ul>
+    <Opcion enlace="home" />
+</ul>
+
             <section className={tema === "oscuro" ? "contenido oscuro" : "contenido"}>
                 <Routes>
                     <Route path="/" element={<Selector_idioma idioma={idioma} setIdioma={setIdioma}/>} />
