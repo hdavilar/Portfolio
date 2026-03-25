@@ -64,7 +64,7 @@
     cursor: pointer;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 817px) {
     .op-menu, .op-menu a{
         min-width: 140px;
         height: 50px;

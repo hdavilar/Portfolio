@@ -48,7 +48,7 @@
     height: 70px; /*Alto*/
 }
 
-@media (min-width: 800px) {
+@media (min-width: 817px) {
     .tema-claro{
         width: 60px; /*Ancho*/
         height: 60px; /*Alto*/
