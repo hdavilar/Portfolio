@@ -2,5 +2,17 @@
     "nombre": "Héctor Dávila Rodríguez",
     "home": "Home",
     "projects": "Projects",
-    "resume": "Resume"
+    "resume": "Resume",
+    "project": [
+        {
+            "name": "CometArt",
+            "l_desc": "A social network website focused on image content.",
+            "b_desc": "This website was developed as the final project for the Higher Vocational Training in Web Development using React and FastAPI (Python). The project is an image-focused social network where users can publish, edit, and delete posts, comment on images, add them to favorites, follow other users, view profiles, and contact them."
+        },
+        {
+            "name": "CometArt",
+            "l_desc": "A social network website focused on image content.",
+            "b_desc": "This website was developed as the final project for the Higher Vocational Training in Web Development using React and FastAPI (Python). The project is an image-focused social network where users can publish, edit, and delete posts, comment on images, add them to favorites, follow other users, view profiles, and contact them."
+        }
+    ]
 }

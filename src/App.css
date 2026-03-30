@@ -13,3 +13,7 @@
 .contenido{
     grid-area: contenido;
 }
+
+.home, .projects, .resume, .project{
+    min-height: calc(100vh - 80px);
+}

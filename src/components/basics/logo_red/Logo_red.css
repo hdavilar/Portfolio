@@ -2,6 +2,14 @@
     color: #365679;
 }
 
+.icon-red:hover{
+    color: #1c3f60;
+}
+
 .icon-red.oscuro{
     color: #f3f6fa;
+}
+
+.icon-red.oscuro:hover{
+    color: #afc1d0;
 }

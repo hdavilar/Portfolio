@@ -15,6 +15,7 @@ import Logo_red from '../components/basics/logo_red/Logo_red';
 import Opcion from '../components/basics/opcion_menu/Opcion';
 import Menu from '../components/intermedios/menu/Menu';
 import Home from '../components/paginas/Home/Home';
+import Projects from '../components/paginas/Projects/Projects';
 
 
 
@@ -50,7 +51,9 @@ function RouterPrincipal({idioma, setIdioma}) {
                     <Route path="/" element={<Home tema={tema} />} />
                     {/*<Route path="/home" element={<Home />} />*/}
                     <Route path="/resume" element={<Home />} />
-                    <Route path="/projects" element={<Home />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path='/:id' element={<Projects />} />
+                    
                     {/*<Route path="/anadir" element={<Anadir tema={tema} usuario_actual={info_usuario} />} >
                         <Route path='' element={<FormularioAnadir/>} />
                         <Route path=':id' element={<FormularioAnadir/>} />
