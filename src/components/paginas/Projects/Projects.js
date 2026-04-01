@@ -11,7 +11,7 @@ function Projects({tema}) {
 
   return (
     <section className='projects'>
-        <Titulo titulo="Proyectos" />
+        <Titulo titulo={t("projects")} tema={tema}/>
         <div className='listado'>
             {projectList.map((project, index) => (
                 <Proyecto_lit

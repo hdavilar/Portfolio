@@ -11,8 +11,8 @@ const ICONOS = {
   javascript: JavaScript
 };
 
-function Tecnologia({ tema, texto, img }) {
-  const Icono = ICONOS[(img || "").toLowerCase()];
+function Tecnologia({ tema, texto }) {
+  const Icono = ICONOS[(texto.toLowerCase() || "").toLowerCase()];
 
   return (
     <div className={tema === "oscuro" ? "contenedor-tec oscuro" : "contenedor-tec"}>

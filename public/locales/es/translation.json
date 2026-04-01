@@ -1,8 +1,12 @@
 {
     "nombre": "Héctor Dávila Rodríguez",    
     "home": "Inicio",
+    "home_info":{
+        "subtitle": "Desarrollador de Software",
+        "description1": "Soy un estudiante del 1º curso del grado de Ingeniería Telemática en Telelecomunicaciones de la Universidad de Extremadura en Mérida.",
+        "description2": "Me gustaría dedicarme al desarrollo de backend sobretodo con Java, aunque también poseo conocimientos de frontend."
+    },
     "projects": "Proyectos",
-    "resume": "Currículum",
     "project": [
         {
             "name": "PixelPlanner",
@@ -23,9 +27,10 @@
             "github": "https://github.com/hdavilar/API-Cometart"
         }
     ],
-    "home_info":{
-        "subtitle": "Desarrollador de Software",
-        "description1": "Soy un estudiante del 1º curso del grado de Ingeniería Telemática en Telelecomunicaciones de la Universidad de Extremadura en Mérida.",
-        "description2": "Me gustaría dedicarme al desarrollo de backend sobretodo con Java, aunque también poseo conocimientos de frontend."
-    }
+    "resume": "Currículum",
+    "skills": "Habilidades",
+    "education": "Educación",
+    "experience": "Experiencia"
+    
+    
 }
