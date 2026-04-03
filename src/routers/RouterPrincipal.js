@@ -17,6 +17,7 @@ import Menu from '../components/intermedios/menu/Menu';
 import Home from '../components/paginas/Home/Home';
 import Projects from '../components/paginas/Projects/Projects';
 import Resume from '../components/paginas/Resume/Resume';
+import Project from '../components/paginas/Project/Project';
 
 
 
@@ -53,7 +54,7 @@ function RouterPrincipal({idioma, setIdioma}) {
                     {/*<Route path="/home" element={<Home />} />*/}
                     <Route path="/resume" element={<Resume tema={tema} />} />
                     <Route path="/projects" element={<Projects tema={tema}/>} />
-                    <Route path='/:id' element={<Projects tema={tema}/>} />
+                    <Route path='/:id' element={<Project tema={tema}/>} />
                     
                     {/*<Route path="/anadir" element={<Anadir tema={tema} usuario_actual={info_usuario} />} >
                         <Route path='' element={<FormularioAnadir/>} />
