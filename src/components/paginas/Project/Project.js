@@ -5,15 +5,17 @@ import "./Project.css"
 import { useTranslation } from 'react-i18next';
 
 import Titulo from '../../basics/titulo/Titulo'
-
-//Imágenes de los proyectos a importar
-import PixelPlanner from "./img/pixelplanner.jpg"
 import Texto from '../../basics/texto/Texto';
 import Separador from '../../basics/separador/Separador';
 import Logo_red from '../../basics/logo_red/Logo_red';
 
+//Imágenes de los proyectos a importar
+import PixelPlanner from "./img/pixelplanner.png"
+import CometArt from "./img/cometart.jpg"
+
 const IMGS = {
-    pixelplanner: PixelPlanner
+    pixelplanner: PixelPlanner,
+    cometart: CometArt
 }
 
 function Project({ tema }) {
@@ -32,7 +34,11 @@ function Project({ tema }) {
                 <Separador tema={tema} />
                 <Texto tema={tema} texto={projectData.tec} />
                 <Separador tema={tema} />
-                <Logo_red tema={tema} img="github" enlace={""} />
+                <div className='links'>
+                    {projectData.github.split("||").map((enlace, index) => (
+                        <Logo_red key={`github-${index}`} tema={tema} img="github" enlace={enlace.trim()} />
+                    ))}                    
+                </div>
             </div>
 
         </section>

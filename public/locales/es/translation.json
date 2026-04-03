@@ -16,18 +16,11 @@
             "github": "https://github.com/hdavilar/PixelPlanner"
         },
         {
-            "name": "CometArt Frontend",
-            "l_desc": "Frontend de una web que es una red social centrada en el contenido de las imágenes.",
+            "name": "CometArt",
+            "l_desc": "Web que es una red social centrada en el contenido de las imágenes.",
             "b_desc": "Esta web fue desarrollada como el TFG del FP Superior DAW usando React y FastAPI (Python). Esta web, nació de la idea de la existencia de una red social de este tipo con una interfaz amigable y . El proyecto consiste en una red social centrada en la publicación de imágenes, pudiendo editar y eliminar estas. Además, se puede comentar dichas imágenes y añadirlas a los favoritos. También se puede seguir a otros usuarios, ver sus perfiles y contactar con ellos.",
             "tec": "Esta aplicación fue desarrollada con ...",
-            "github": "https://github.com/hdavilar/Front-Cometart"
-        },
-        {
-            "name": "CometArt API",
-            "l_desc": "API de una web que es una red social centrada en el contenido de las imágenes.",
-            "b_desc": "Esta web fue desarrollada como el TFG del FP Superior DAW usando React y FastAPI (Python). Esta web, nació de la idea de la existencia de una red social de este tipo con una interfaz amigable y . El proyecto consiste en una red social centrada en la publicación de imágenes, pudiendo editar y eliminar estas. Además, se puede comentar dichas imágenes y añadirlas a los favoritos. También se puede seguir a otros usuarios, ver sus perfiles y contactar con ellos.",
-            "tec": "Esta aplicación fue desarrollada con ...",
-            "github": "https://github.com/hdavilar/API-Cometart"
+            "github": "https://github.com/hdavilar/Front-Cometart || https://github.com/hdavilar/API-Cometart"
         }
     ],
     "resume": "Currículum",
