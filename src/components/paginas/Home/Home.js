@@ -15,6 +15,7 @@ function Home({tema}) {
 
   return (
     <section className='home'>
+        <title>{t("home")}</title>
         {/*<Cuadro_info tema={tema} texto1="FP Desarrollo de Aplicaciones Web, Cáceres" texto2="2024/25" />
         <Proyecto_list tema={tema} nombreProyecto={"CometArt"} descripcion={"Descripción del proyecto aaaaaaaaa aaa aaaaaaaaaaaaaaaaaaa aaaaaaaa aaaaaaaaaaa "}
          enlace={"#"} />*/}

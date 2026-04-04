@@ -45,6 +45,8 @@ function Resume({tema}) {
 
     return (
         <section className='resume'>
+            <title>{t("resume")}</title>
+
             <Titulo titulo={t("resume")} tema={tema}/>
             <div className='info-res'>
                 <Texto texto={t("skills")} tema={tema}/>

@@ -11,6 +11,8 @@ function Projects({tema}) {
 
   return (
     <section className='projects'>
+        <title>{t("projects")}</title> 
+        
         <Titulo titulo={t("projects")} tema={tema}/>
         <div className='listado'>
             {projectList.map((project, index) => (
