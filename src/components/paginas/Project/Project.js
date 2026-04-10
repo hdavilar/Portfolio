@@ -23,14 +23,14 @@ function Project({ tema }) {
     const { t } = useTranslation();
 
     const projectData = t("project", { returnObjects: true, defaultValue: [] }).find(proj => proj.name.toLowerCase() === id.toLowerCase());
-    const pName = id.charAt(0).toUpperCase() + id.substring(1);
+    const pName = projectData.name; //id.charAt(0).toUpperCase() + id.substring(1);
 
     return (
         <section className='project'>
             <title>{pName}</title>
 
             <Titulo tema={tema} titulo={pName} />
-            <img src={IMGS[id]} alt={"Imagen del proyecto " + id} />
+            <img src={IMGS[id]} alt={"Imagen del proyecto " + pName} />
 
             <div className='infoProject'>
                 <Texto tema={tema} texto={projectData.b_desc} />

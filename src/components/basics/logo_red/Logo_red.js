@@ -12,6 +12,7 @@ const ICONOS = {
   email: Email
 };
 
+
 function Logo_red({tema, img, enlace}) {
   const Icono = ICONOS[(img || "").toLowerCase()];
 
