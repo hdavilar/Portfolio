@@ -9,14 +9,8 @@ import Texto from '../../basics/texto/Texto';
 import Separador from '../../basics/separador/Separador';
 import Logo_red from '../../basics/logo_red/Logo_red';
 
-//Imágenes de los proyectos a importar
-import PixelPlanner from "./img/pixelplanner.png"
-import CometArt from "./img/cometart.jpg"
-
-const IMGS = {
-    pixelplanner: PixelPlanner,
-    cometart: CometArt
-}
+import { importarImgs } from '../../../utils/images';
+const IMGS = importarImgs("Project");
 
 function Project({ tema }) {
     const { id } = useParams();
