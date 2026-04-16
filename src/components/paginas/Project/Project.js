@@ -25,8 +25,9 @@ function Project({ tema }) {
     const { id } = useParams();
     const { t } = useTranslation();
 
-    const projectData = t("project", { returnObjects: true, defaultValue: [] }).find(proj => proj.name.toLowerCase() === id.toLowerCase());
-    const pName = projectData.name; //id.charAt(0).toUpperCase() + id.substring(1);
+    const projectData = t("project", { returnObjects: true, defaultValue: [] })
+        .find(proj => proj.name.toLowerCase() === id.toLowerCase());
+    const pName = projectData.name; 
 
     return (
         <section className='project'>
@@ -37,9 +38,13 @@ function Project({ tema }) {
 
             <div className='infoProject'>
                 <Texto tema={tema} texto={projectData.b_desc} />
+
                 <Separador tema={tema} />
+                
                 <Texto tema={tema} texto={projectData.tec} />
+                
                 <Separador tema={tema} />
+                
                 <div className='links'>
                     {projectData.github.split("||").map((enlace, index) => (
                         <Logo_red key={`github-${index}`} tema={tema} img="github" enlace={enlace.trim()} />

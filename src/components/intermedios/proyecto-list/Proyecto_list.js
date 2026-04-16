@@ -28,7 +28,7 @@ function Proyecto_list({tema, nombreProyecto, descripcion, enlace_git}) {
             <img src={IMGS[nombreProyecto.toLowerCase()]} alt={`Imagen de ${nombreProyecto}`} />
             <div>
               {/*Nombre del proyecto*/}
-              <a href={"/" + nombreProyecto.toLowerCase()/*.replace(" ", "-")*/} className='enlace-p'>
+              <a href={"/" + nombreProyecto.toLowerCase()} className='enlace-p'>
                 <Titulo tema={tema} titulo={nombreProyecto} />
               </a>
               {/*Descripción del proyecto*/}

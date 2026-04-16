@@ -23,28 +23,27 @@ function Home({tema}) {
   return (
     <section className='home'>
         <title>{t("home")}</title>
-        {/*<Cuadro_info tema={tema} texto1="FP Desarrollo de Aplicaciones Web, Cáceres" texto2="2024/25" />
-        <Proyecto_list tema={tema} nombreProyecto={"CometArt"} descripcion={"Descripción del proyecto aaaaaaaaa aaa aaaaaaaaaaaaaaaaaaa aaaaaaaa aaaaaaaaaaa "}
-         enlace={"#"} />*/}
+        
         <Titulo tema={tema} titulo={t("nombre")} />
         <Texto tema={tema} texto={t("home_info.subtitle")} />
+        
         <Texto tema={tema} texto={t("home_info.description1")} />
+
         <Separador tema={tema} />
+        
         <Texto tema={tema} texto={t("home_info.description2")} />
+        
         <Separador tema={tema} />
+        
         <div className='logos'>
           <Logo_red tema={tema} img="linkedin" enlace="https://www.linkedin.com/in/hector-davila-rodriguez" />
           <Logo_red tema={tema} img="github" enlace="https://github.com/hdavilar" />
           <Logo_red tema={tema} img="email" enlace="hdavilar01@gmail.com" />
         </div>
         
-        {/*<Logo_red tema={tema} img="email" enlace="#" />
-        <Texto tema={tema} texto="email@email.com" />
-
-        ¿
+        {/*
         <Logo_red tema={tema} img="telefono" enlace="#" />
         <Texto tema={tema} texto="123456789" />
-        ?
         */}
     </section>
   )
