@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Menu.css"
-import Selector_tema from '../../basics/selector_tema/Selector_tema'
-import Selector_idioma from '../../basics/selector_idioma/Selector_idioma'
+import SelectorTema from '../../basics/selector_tema/Selector_tema'
+import SelectorIdioma from '../../basics/selector_idioma/Selector_idioma'
 import Opcion from '../../basics/opcion_menu/Opcion'
 
 /**
@@ -18,8 +18,8 @@ function Menu({tema, setTema, idioma, setIdioma}) {
   return (
     <div className="menu">
         <div className='cambios'>
-            <Selector_tema tema={tema} setTema={setTema} />
-            <Selector_idioma idioma={idioma} setIdioma={setIdioma} />
+            <SelectorTema tema={tema} setTema={setTema} />
+            <SelectorIdioma idioma={idioma} setIdioma={setIdioma} />
         </div>
         <div className='opciones'>
             <Opcion enlace="home" />

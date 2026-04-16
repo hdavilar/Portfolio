@@ -1,11 +1,10 @@
-import React, { use } from 'react'
 import "./Home.css"
 import { useTranslation } from 'react-i18next';
 
 import Titulo from '../../basics/titulo/Titulo'
 import Texto from '../../basics/texto/Texto'
 import Separador from '../../basics/separador/Separador'
-import Logo_red from '../../basics/logo_red/Logo_red'
+import LogoRed from '../../basics/logo_red/Logo_red'
 //import Cuadro_info from '../../intermedios/cuadro-info/Cuadro_info'
 //import Proyecto_list from '../../intermedios/proyecto-list/Proyecto_list'
 
@@ -36,9 +35,9 @@ function Home({tema}) {
         <Separador tema={tema} />
         
         <div className='logos'>
-          <Logo_red tema={tema} img="linkedin" enlace="https://www.linkedin.com/in/hector-davila-rodriguez" />
-          <Logo_red tema={tema} img="github" enlace="https://github.com/hdavilar" />
-          <Logo_red tema={tema} img="email" enlace="hdavilar01@gmail.com" />
+          <LogoRed tema={tema} img="linkedin" enlace="https://www.linkedin.com/in/hector-davila-rodriguez" />
+          <LogoRed tema={tema} img="github" enlace="https://github.com/hdavilar" />
+          <LogoRed tema={tema} img="email" enlace="hdavilar01@gmail.com" />
         </div>
         
         {/*

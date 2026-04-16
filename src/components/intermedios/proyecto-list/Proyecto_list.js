@@ -2,7 +2,7 @@ import React from 'react'
 import "./Proyecto_list.css"
 import Texto from '../../basics/texto/Texto'
 import Titulo from '../../basics/titulo/Titulo'
-import Logo_red from '../../basics/logo_red/Logo_red'
+import LogoRed from '../../basics/logo_red/Logo_red'
 
 import { importarImgs } from '../../../utils/images';
 
@@ -19,7 +19,7 @@ const IMGS = importarImgs("proyecto-list");
  * 
  * @returns Un componente con un proyecto como un ítem de una lista.
  */
-function Proyecto_list({tema, nombreProyecto, descripcion, enlace_git}) {
+function ProyectList({tema, nombreProyecto, descripcion, enlace_git}) {
   
   return (
     <li className={tema === "oscuro" ? "p-list oscuro" : "p-list"}>
@@ -28,7 +28,7 @@ function Proyecto_list({tema, nombreProyecto, descripcion, enlace_git}) {
             <img src={IMGS[nombreProyecto.toLowerCase()]} alt={`Imagen de ${nombreProyecto}`} />
             <div>
               {/*Nombre del proyecto*/}
-              <a href={"/" + nombreProyecto.toLowerCase()} className='enlace-p'>
+              <a href={"/project/" + nombreProyecto.toLowerCase()} className='enlace-p'>
                 <Titulo tema={tema} titulo={nombreProyecto} />
               </a>
               {/*Descripción del proyecto*/}
@@ -37,9 +37,9 @@ function Proyecto_list({tema, nombreProyecto, descripcion, enlace_git}) {
             
         </div>
         {/*Enlace al proyecto (logo github)*/}
-        <Logo_red tema={tema} img="github" enlace={enlace_git} />
+        <LogoRed tema={tema} img="github" enlace={enlace_git} />
     </li>
   )
 }
 
-export default Proyecto_list
+export default ProyectList

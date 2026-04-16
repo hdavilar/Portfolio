@@ -9,7 +9,7 @@ import "./Selector_tema.css"
  * 
  * @returns Un componente que muestra el selector de tema.
  */
-function Selector_tema({ tema, setTema }) {
+function SelectorTema({ tema, setTema }) {
 
      const cambiarTema = () => {
         /**
@@ -58,4 +58,4 @@ function Selector_tema({ tema, setTema }) {
     )
 }
 
-export default Selector_tema
+export default SelectorTema

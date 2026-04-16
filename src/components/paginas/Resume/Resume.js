@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Titulo from '../../basics/titulo/Titulo'
 import Texto from '../../basics/texto/Texto';
 import Tecnologia from '../../basics/tecnologia/Tecnologia';
-import Cuadro_info from '../../intermedios/cuadro-info/Cuadro_info';
+import CuadroInfo from '../../intermedios/cuadro-info/Cuadro_info';
 
 /**
  * Componente que representa la página de resumen del portfolio, con información sobre habilidades, 
@@ -43,7 +43,7 @@ function Resume({tema}) {
                 <Texto texto={t("education")} tema={tema}/>
                 <div className='edu'>
                     {allEdu.map((edu, index) => (
-                        <Cuadro_info key={`${edu}-${index}`} tema={tema} texto1={edu.t1} texto2={edu.t2} />
+                        <CuadroInfo key={`${edu}-${index}`} tema={tema} texto1={edu.t1} texto2={edu.t2} />
                     ))}
                 </div>
 
@@ -51,7 +51,7 @@ function Resume({tema}) {
                 <Texto texto={t("experience")} tema={tema}/>
                 <div className='exp'>
                     {allExp.map((exp, index) => (
-                        <Cuadro_info key={`${exp}-${index}`} tema={tema} texto1={exp.t1} texto2={exp.t2} />
+                        <CuadroInfo key={`${exp}-${index}`} tema={tema} texto1={exp.t1} texto2={exp.t2} />
                     ))}
                 </div>
             </div>

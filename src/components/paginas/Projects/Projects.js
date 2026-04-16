@@ -2,7 +2,7 @@ import React from 'react'
 import "./Projects.css"
 import { useTranslation } from 'react-i18next';
 import Titulo from '../../basics/titulo/Titulo'
-import Proyecto_lit from '../../intermedios/proyecto-list/Proyecto_list';
+import ProyectList from '../../intermedios/proyecto-list/Proyecto_list';
 
 /**
  * Componente que representa la página de proyectos del portafolio, con una lista de proyectos.
@@ -23,7 +23,7 @@ function Projects({tema}) {
         <Titulo titulo={t("projects")} tema={tema}/>
         <div className='listado'>
             {projectList.map((project, index) => (
-                <Proyecto_lit
+                <ProyectList
                     key={`${project.name}-${index}`}
                     tema={tema}
                     nombreProyecto={project.name}

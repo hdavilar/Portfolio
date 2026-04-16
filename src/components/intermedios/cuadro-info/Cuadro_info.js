@@ -1,5 +1,4 @@
 import React from 'react'
-import { useTranslation } from "react-i18next";
 import "./Cuadro_info.css"
 import Texto from '../../basics/texto/Texto'
 
@@ -12,9 +11,7 @@ import Texto from '../../basics/texto/Texto'
  * 
  * @returns Un componente con un cuadro informativo.
  */
-function Cuadro_info({tema, texto1, texto2}) {
-
-    const { t } = useTranslation();
+function CuadroInfo({tema, texto1, texto2}) {
 
     return (
         <div className={tema === "oscuro" ? "c-info oscuro" : "c-info"}>
@@ -24,4 +21,4 @@ function Cuadro_info({tema, texto1, texto2}) {
     )
 }
 
-export default Cuadro_info
+export default CuadroInfo

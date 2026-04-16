@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import Titulo from '../../basics/titulo/Titulo'
 import Texto from '../../basics/texto/Texto';
 import Separador from '../../basics/separador/Separador';
-import Logo_red from '../../basics/logo_red/Logo_red';
+import LogoRed from '../../basics/logo_red/Logo_red';
 
 import { importarImgs } from '../../../utils/images';
 
@@ -47,7 +47,7 @@ function Project({ tema }) {
                 
                 <div className='links'>
                     {projectData.github.split("||").map((enlace, index) => (
-                        <Logo_red key={`github-${index}`} tema={tema} img="github" enlace={enlace.trim()} />
+                        <LogoRed key={`github-${index}`} tema={tema} img="github" enlace={enlace.trim()} />
                     ))}                    
                 </div>
             </div>

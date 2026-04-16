@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
  * 
  * @returns Un componente que muestra el selector de idioma.
  */
-function Selector_idioma({idioma, setIdioma}) {
+function SelectorIdioma({idioma, setIdioma}) {
 
     const { i18n } = useTranslation();
 
@@ -51,4 +51,4 @@ function Selector_idioma({idioma, setIdioma}) {
     )
 }
 
-export default Selector_idioma
+export default SelectorIdioma

@@ -23,7 +23,7 @@ const ICONOS = {
  *  
  * @returns Un componente con un logo en svg que redirige a una URL.
  */
-function Logo_red({tema, img, enlace}) {
+function LogoRed({tema, img, enlace}) {
   const Icono = ICONOS[(img || "").toLowerCase()];
 
   return (
@@ -33,4 +33,4 @@ function Logo_red({tema, img, enlace}) {
   )
 }
 
-export default Logo_red
+export default LogoRed
