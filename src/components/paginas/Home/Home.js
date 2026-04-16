@@ -9,6 +9,13 @@ import Logo_red from '../../basics/logo_red/Logo_red'
 //import Cuadro_info from '../../intermedios/cuadro-info/Cuadro_info'
 //import Proyecto_list from '../../intermedios/proyecto-list/Proyecto_list'
 
+/**
+ * Componente que representa la página de inicio del portafolio.
+ * 
+ * @param tema (String) Tema de la página, puede ser "oscuro" o "claro".
+ * 
+ * @returns Un componente con la página de inicio del portafolio.
+ */
 function Home({tema}) {
 
   const { t } = useTranslation();

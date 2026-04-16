@@ -1,6 +1,14 @@
 import React from 'react'
 import "./Selector_tema.css"
 
+/**
+ * Componente que muestra el selector de tema de la página.
+ * 
+ * @param tema (String) El tema actual de la página, puede ser "es" o "en".
+ * @param setTema (Function) Función para cambiar el tema de la página.
+ * 
+ * @returns Un componente que muestra el selector de tema.
+ */
 function Selector_tema({ tema, setTema }) {
 
      const cambiarTema = () => {

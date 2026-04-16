@@ -4,6 +4,13 @@ import { useTranslation } from 'react-i18next';
 import Titulo from '../../basics/titulo/Titulo'
 import Proyecto_lit from '../../intermedios/proyecto-list/Proyecto_list';
 
+/**
+ * Componente que representa la página de proyectos del portafolio, con una lista de proyectos.
+ * 
+ * @param tema (String) Tema de la página, puede ser "oscuro" o "claro".
+ * 
+ * @returns Un componente con la página de proyectos del portafolio.
+ */
 function Projects({tema}) {
 
     const { t } = useTranslation();

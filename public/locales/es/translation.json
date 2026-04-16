@@ -24,6 +24,36 @@
         }
     ],
     "resume": "Currículum",
+    "resume_info": {
+        "skills": [
+            "Java",
+            "JavaScript"
+        ],
+        "education": [
+            {
+                "t1": "FP Superior de Desarrollo de Aplicaciones Multiplataforma, IES Ágora, Cáceres",
+                "t2": "2022 - 2024"
+            },
+            {
+                "t1": "FP Superior de Desarrollo de Aplicaciones Web, IES Ágora, Cáceres",
+                "t2": "2024 - 2025"
+            },
+            {
+                "t1": "Ingeniería telemática en Telecomunicaciones, UEX, Mérida",
+                "t2": "2025 - Actualidad"
+            }
+        ],
+        "experience": [
+            {
+                "t1": "Desarrollo de Middleware, Viewnext",
+                "t2": "3 meses"
+            },
+            {
+                "t1": "Desarrollo de web, Viewnext",
+                "t2": "8 meses"
+            }
+        ]
+    },
     "skills": "Habilidades",
     "education": "Educación",
     "experience": "Experiencia"

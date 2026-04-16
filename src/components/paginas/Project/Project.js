@@ -10,8 +10,17 @@ import Separador from '../../basics/separador/Separador';
 import Logo_red from '../../basics/logo_red/Logo_red';
 
 import { importarImgs } from '../../../utils/images';
+
+//Constante con las imágenes de los proyectos.
 const IMGS = importarImgs("Project");
 
+/**
+ * Componente que representa la página de un proyecto con el nombre en la URL.
+ * 
+ * @param tema (String) Tema de la página, puede ser "oscuro" o "claro".
+ * 
+ * @returns Un componente con la página de un proyecto.
+ */
 function Project({ tema }) {
     const { id } = useParams();
     const { t } = useTranslation();

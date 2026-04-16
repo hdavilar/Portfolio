@@ -2,7 +2,14 @@ import React from 'react'
 import './Selector_idioma.css'
 import { useTranslation } from "react-i18next";
 
-
+/**
+ * Componente que muestra el selector de idioma de la página.
+ * 
+ * @param idioma (String) El idioma actual de la página, puede ser "es" o "en".
+ * @param setIdioma (Function) Función para cambiar el idioma de la página.
+ * 
+ * @returns Un componente que muestra el selector de idioma.
+ */
 function Selector_idioma({idioma, setIdioma}) {
 
     const { i18n } = useTranslation();

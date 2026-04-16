@@ -7,48 +7,31 @@ import Texto from '../../basics/texto/Texto';
 import Tecnologia from '../../basics/tecnologia/Tecnologia';
 import Cuadro_info from '../../intermedios/cuadro-info/Cuadro_info';
 
+/**
+ * Componente que representa la página de resumen del portfolio, con información sobre habilidades, 
+ * educación y experiencia.
+ * 
+ * @param tema (String) Tema de la página, puede ser "oscuro" o "claro". 
+ * 
+ * @returns Un componente con la página de resumen del portfolio.
+ */
 function Resume({tema}) {
 
     const { t } = useTranslation();
-    const allSkills = [
-        "Java",
-        "JavaScript"
-    ];
+    const allSkills = t("resume_info.skills", { returnObjects: true, defaultValue: [] });
 
-    const allEdu = [
-        {
-            t1: "FP Superior de Desarrollo de Aplicaciones Multiplataforma, IES Ágora, Cáceres",
-            t2: "2022 - 2024"
-        },
-        {
-            t1: "FP Superior de Desarrollo de Aplicaciones Web, IES Ágora, Cáceres",
-            t2: "2024 - 2025"
-        },
-        {
-            t1: "Ingeniería telemática en Telecomunicaciones, UEX, Mérida",
-            t2: "2025 - Actualidad"
-        }
-        
-    ]
+    const allEdu = t("resume_info.education", { returnObjects: true, defaultValue: [] });
 
-    const allExp = [
-        {
-            t1: "Desarrollo de Middleware, Viewnext",
-            t2: "3 meses"
-        },
-        {
-            t1: "Desarrollo de web, Viewnext",
-            t2: "8 meses"
-        }
-        
-    ]
+    const allExp = t("resume_info.experience", { returnObjects: true, defaultValue: [] });
 
     return (
         <section className='resume'>
             <title>{t("resume")}</title>
 
             <Titulo titulo={t("resume")} tema={tema}/>
+
             <div className='info-res'>
+                {/*Habilidades*/}
                 <Texto texto={t("skills")} tema={tema}/>
                 <div className='skills'>
                     {allSkills.map((skill, index) => (
@@ -56,6 +39,7 @@ function Resume({tema}) {
                     ))}
                 </div>
                 
+                {/*Educación*/}
                 <Texto texto={t("education")} tema={tema}/>
                 <div className='edu'>
                     {allEdu.map((edu, index) => (
@@ -63,6 +47,7 @@ function Resume({tema}) {
                     ))}
                 </div>
 
+                {/*Experiencia*/}
                 <Texto texto={t("experience")} tema={tema}/>
                 <div className='exp'>
                     {allExp.map((exp, index) => (

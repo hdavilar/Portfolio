@@ -5,8 +5,20 @@ import Titulo from '../../basics/titulo/Titulo'
 import Logo_red from '../../basics/logo_red/Logo_red'
 
 import { importarImgs } from '../../../utils/images';
+
+//Constante con las imágenes de los proyectos.
 const IMGS = importarImgs("proyecto-list");
 
+/**
+ * Componente que representa un proyecto en la lista de proyectos.
+ * 
+ * @param tema (String) Tema de la página, puede ser "oscuro" o "claro".
+ * @param nombreProyecto (String) Nombre del proyecto.
+ * @param descripcion (String) Descripción del proyecto.
+ * @param enlace_git (String) Enlace al repositorio de GitHub del proyecto.
+ * 
+ * @returns Un componente con un proyecto como un ítem de una lista.
+ */
 function Proyecto_list({tema, nombreProyecto, descripcion, enlace_git}) {
   
   return (
